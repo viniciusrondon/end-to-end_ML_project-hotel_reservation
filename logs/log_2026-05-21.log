@@ -1,0 +1,59 @@
+2026-05-21 22:13:28,933 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-21 22:13:28,933 - data_preprocessing - INFO - Starting data preprocessing pipeline from RAW directory
+2026-05-21 22:13:28,933 - utils.common_functions - INFO - Loading data from artifacts/raw\train.csv
+2026-05-21 22:13:28,968 - utils.common_functions - INFO - Loading data from artifacts/raw\test.csv
+2026-05-21 22:13:28,985 - data_preprocessing - INFO - Train and Test data loaded successfully
+2026-05-21 22:13:28,985 - data_preprocessing - INFO - Preprocessing train and test data
+2026-05-21 22:13:28,985 - data_preprocessing - INFO - Preprocessing data step
+2026-05-21 22:13:28,985 - data_preprocessing - INFO - Dropping Booking_ID column
+2026-05-21 22:13:28,985 - data_preprocessing - INFO - Dropping duplicate rows
+2026-05-21 22:13:28,998 - data_preprocessing - INFO - Getting categorical and numerical columns from config, applying label encoding
+2026-05-21 22:13:29,011 - data_preprocessing - INFO - Saving mappings to artifacts/processed
+2026-05-21 22:13:29,012 - data_preprocessing - ERROR - Error saving mappings to artifacts/processed\mappings.json: Object of type int64 is not JSON serializable
+2026-05-21 22:13:29,012 - data_preprocessing - ERROR - Errodata: Error occurred in file: C:\Users\Rondon\Documents\1. Python Starter\24.hotel_revervation_ml\src\data_preprocessing.py at line number: 53 error message: Error saving mappings | cause: Object of type int64 is not JSON serializable
+2026-05-21 22:13:29,012 - data_preprocessing - ERROR - Error in data preprocesr preprocessing sing pipeline: Error occurred in file: C:\Users\Rondon\Documents\1. Python Starter\24.hotel_revervation_ml\src\data_preprocessing.py at line number: 57 error message: Error preprocessing data | cause: Error occurred in file: C:\Users\Rondon\Documents\1. Python Starter\24.hotel_revervation_ml\src\data_preprocessing.py at line number: 53 error message: Error saving mappings | cause: Object of type int64 is not JSON serializable
+2026-05-21 22:17:00,028 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-21 22:17:00,028 - data_preprocessing - INFO - Starting data preprocessing pipeline from RAW directory
+2026-05-21 22:17:00,028 - utils.common_functions - INFO - Loading data from artifacts/raw\train.csv
+2026-05-21 22:17:00,067 - utils.common_functions - INFO - Loading data from artifacts/raw\test.csv
+2026-05-21 22:17:00,078 - data_preprocessing - INFO - Train and Test data loaded successfully
+2026-05-21 22:17:00,078 - data_preprocessing - INFO - Preprocessing train and test data
+2026-05-21 22:17:00,078 - data_preprocessing - INFO - Preprocessing data step
+2026-05-21 22:17:00,078 - data_preprocessing - INFO - Dropping Booking_ID column
+2026-05-21 22:17:00,079 - data_preprocessing - INFO - Dropping duplicate rows
+2026-05-21 22:17:00,091 - data_preprocessing - INFO - Getting categorical and numerical columns from config, applying label encoding
+2026-05-21 22:17:00,100 - data_preprocessing - INFO - Skewness handling
+2026-05-21 22:17:00,101 - data_preprocessing - ERROR - Error preprocessing data: Cannot perform reduction 'skew' with string dtype
+2026-05-21 22:17:00,101 - data_preprocessing - ERROR - Error in data preprocessing pipeline: Error occurred in file: C:\Users\Rondon\Documents\1. Python Starter\24.hotel_revervation_ml\src\data_preprocessing.py at line number: 60 error message: Error preprocessing data | cause: Cannot perform reduction 'skew' with string dtype
+2026-05-21 22:18:50,756 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-21 22:18:50,756 - data_preprocessing - INFO - Starting data preprocessing pipeline from RAW directory
+2026-05-21 22:18:50,757 - utils.common_functions - INFO - Loading data from artifacts/raw\train.csv
+2026-05-21 22:18:50,791 - utils.common_functions - INFO - Loading data from artifacts/raw\test.csv
+2026-05-21 22:18:50,801 - data_preprocessing - INFO - Train and Test data loaded successfully
+2026-05-21 22:18:50,801 - data_preprocessing - INFO - Preprocessing train and test data
+2026-05-21 22:18:50,801 - data_preprocessing - INFO - Preprocessing data step
+2026-05-21 22:18:50,801 - data_preprocessing - INFO - Dropping Booking_ID column
+2026-05-21 22:18:50,802 - data_preprocessing - INFO - Dropping duplicate rows
+2026-05-21 22:18:50,813 - data_preprocessing - INFO - Getting categorical and numerical columns from config, applying label encoding
+2026-05-21 22:18:50,821 - data_preprocessing - INFO - Skewness handling
+2026-05-21 22:18:50,823 - data_preprocessing - INFO - Skewness handled successfully
+2026-05-21 22:18:50,823 - data_preprocessing - INFO - Preprocessing data step
+2026-05-21 22:18:50,823 - data_preprocessing - INFO - Dropping Booking_ID column
+2026-05-21 22:18:50,823 - data_preprocessing - INFO - Dropping duplicate rows
+2026-05-21 22:18:50,826 - data_preprocessing - INFO - Getting categorical and numerical columns from config, applying label encoding
+2026-05-21 22:18:50,829 - data_preprocessing - INFO - Skewness handling
+2026-05-21 22:18:50,830 - data_preprocessing - INFO - Skewness handled successfully
+2026-05-21 22:18:50,830 - data_preprocessing - INFO - Preprocessing train and test data completed successfully
+2026-05-21 22:18:50,830 - data_preprocessing - INFO - Balancing train data
+2026-05-21 22:18:50,830 - data_preprocessing - INFO - Balancing data step
+2026-05-21 22:18:52,402 - data_preprocessing - INFO - Data balanced successfully
+2026-05-21 22:18:52,402 - data_preprocessing - INFO - Balancing train data completed successfully
+2026-05-21 22:18:52,402 - data_preprocessing - INFO - Selecting features for train data
+2026-05-21 22:18:52,402 - data_preprocessing - INFO - Selecting features step
+2026-05-21 22:18:54,231 - data_preprocessing - INFO - Selecting features for train and test data completed successfully
+2026-05-21 22:18:54,231 - data_preprocessing - INFO - Saving train data to processed folder
+2026-05-21 22:18:54,231 - data_preprocessing - INFO - Saving data processed in processed folder
+2026-05-21 22:18:54,272 - data_preprocessing - INFO - Data saved successfully to artifacts/processed\Processed_train.csv
+2026-05-21 22:18:54,272 - data_preprocessing - INFO - Saving data processed in processed folder
+2026-05-21 22:18:54,281 - data_preprocessing - INFO - Data saved successfully to artifacts/processed\Processed_test.csv
+2026-05-21 22:18:54,281 - data_preprocessing - INFO - Saving train and test data to processed folder completed successfully

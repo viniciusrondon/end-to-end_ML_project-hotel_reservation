@@ -1,0 +1,18 @@
+2026-05-16 15:12:42,582 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-16 15:13:33,615 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-16 15:13:33,615 - data_ingestion - INFO - Kaggle data ingestion started with: ahsan81/hotel-reservations-classification-dataset and file is hotel_reservations.csv
+2026-05-16 15:13:33,616 - data_ingestion - INFO - Starting kaggle data ingestion pipeline
+2026-05-16 15:13:34,542 - data_ingestion - ERROR - Error downloading CSV file from ahsan81/hotel-reservations-classification-dataset and file is hotel_reservations.csv: 404 Client Error.
+
+Resource not found at URL: https://kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset/versions/1
+Please make sure you specified the correct resource identifiers.
+2026-05-16 15:13:34,542 - data_ingestion - ERROR - Error in kaggle data ingestion pipeline: 'KaggleApiHTTPError' object has no attribute 'exc_info'
+2026-05-16 15:15:46,734 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-16 15:15:46,734 - data_ingestion - INFO - Kaggle data ingestion started with: ahsan81/hotel-reservations-classification-dataset and file is hotel_reservations.csv
+2026-05-16 15:15:46,734 - data_ingestion - INFO - Starting kaggle data ingestion pipeline
+2026-05-16 15:15:49,167 - data_ingestion - INFO - CSV copied from Kaggle dataset ahsan81/hotel-reservations-classification-dataset (Hotel Reservations.csv) to artifacts/raw\raw.csv
+2026-05-16 15:15:49,167 - data_ingestion - INFO - Splitting data into train and test sets with test_ratio 0.2
+2026-05-16 15:15:49,339 - data_ingestion - INFO - Train and test data saved successfully to artifacts/raw\train.csv and artifacts/raw\test.csv
+2026-05-16 15:15:49,341 - data_ingestion - INFO - Kaggle data ingestion pipeline completed successfully
+2026-05-16 15:27:21,598 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-16 15:27:21,598 - src.data_ingestion - INFO - Kaggle data ingestion started with: ahsan81/hotel-reservations-classification-dataset and file is hotel_reservations.csv
