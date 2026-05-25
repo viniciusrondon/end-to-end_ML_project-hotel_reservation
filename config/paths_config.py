@@ -15,3 +15,8 @@ CONFIG_PATH = "config/config.yaml"
 PROCESSED_DIR = "artifacts/processed"
 PROCESSED_TRAIN_FILE_PATH = os.path.join(PROCESSED_DIR, "Processed_train.csv")
 PROCESSED_TEST_FILE_PATH = os.path.join(PROCESSED_DIR, "Processed_test.csv")
+
+
+############## Model Training Paths ##############
+
+MODEL_OUTPUT_PATH = "artifacts/models/lgbm_model.pkl"

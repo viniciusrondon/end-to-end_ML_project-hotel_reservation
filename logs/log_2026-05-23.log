@@ -1,0 +1,201 @@
+2026-05-23 15:38:41,284 - model_training - INFO - Starting model training
+2026-05-23 15:38:41,284 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 15:38:41,284 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 15:38:41,314 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 15:38:41,314 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 15:38:41,330 - model_training - INFO - Data loaded and split successfully
+2026-05-23 15:38:41,331 - model_training - INFO - Training LightGBM model
+2026-05-23 15:38:41,331 - model_training - INFO - Random search parameters initiated
+2026-05-23 15:39:38,193 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 15:39:38,194 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 15:39:38,194 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 15:39:38,194 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 15:39:38,213 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 15:39:38,213 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 15:39:38,213 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 15:39:38,213 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 15:39:38,213 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 15:39:38,213 - model_training - INFO - Saving model
+2026-05-23 15:39:38,239 - model_training - INFO - Model saved successfully
+2026-05-23 15:39:38,239 - model_training - INFO - Model training completed successfully
+2026-05-23 16:10:04,687 - model_training - INFO - Starting model training pipeline
+2026-05-23 16:10:04,687 - model_training - INFO - Starting mlflow run
+2026-05-23 16:10:04,687 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 16:10:04,704 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 16:10:04,704 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 16:10:04,722 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 16:10:04,722 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 16:10:04,727 - model_training - INFO - Data loaded and split successfully
+2026-05-23 16:10:04,727 - model_training - INFO - Training LightGBM model
+2026-05-23 16:10:04,727 - model_training - INFO - Random search parameters initiated
+2026-05-23 16:11:15,598 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 16:11:15,598 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 16:11:15,598 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 16:11:15,598 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 16:11:15,618 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 16:11:15,618 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 16:11:15,618 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 16:11:15,618 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 16:11:15,618 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 16:11:15,618 - model_training - INFO - Saving model
+2026-05-23 16:11:15,646 - model_training - INFO - Model saved successfully
+2026-05-23 16:11:15,646 - model_training - INFO - Logging the model to MLFlow
+2026-05-23 16:11:15,649 - model_training - INFO - Logging the model parameters to MLFlow
+2026-05-23 16:11:15,662 - model_training - INFO - Logging the metrics to MLFlow
+2026-05-23 16:11:15,673 - model_training - INFO - Model training completed successfully
+2026-05-23 16:11:42,294 - model_training - INFO - Starting model training pipeline
+2026-05-23 16:11:42,294 - model_training - INFO - Starting mlflow run
+2026-05-23 16:11:42,294 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 16:11:42,306 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 16:11:42,306 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 16:11:42,321 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 16:11:42,321 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 16:11:42,325 - model_training - INFO - Data loaded and split successfully
+2026-05-23 16:11:42,325 - model_training - INFO - Training LightGBM model
+2026-05-23 16:11:42,325 - model_training - INFO - Random search parameters initiated
+2026-05-23 16:12:43,821 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 16:12:43,821 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 16:12:43,821 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 16:12:43,821 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 16:12:43,841 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 16:12:43,841 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 16:12:43,841 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 16:12:43,841 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 16:12:43,841 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 16:12:43,842 - model_training - INFO - Saving model
+2026-05-23 16:12:43,867 - model_training - INFO - Model saved successfully
+2026-05-23 16:12:43,867 - model_training - INFO - Logging the model to MLFlow
+2026-05-23 16:12:43,870 - model_training - INFO - Logging the model parameters to MLFlow
+2026-05-23 16:12:43,879 - model_training - INFO - Logging the metrics to MLFlow
+2026-05-23 16:12:43,888 - model_training - INFO - Model training completed successfully
+2026-05-23 16:25:39,035 - model_training - INFO - Starting model training pipeline
+2026-05-23 16:25:39,035 - model_training - INFO - Starting mlflow run
+2026-05-23 16:25:39,035 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 16:25:39,046 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 16:25:39,046 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 16:25:39,059 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 16:25:39,059 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 16:25:39,062 - model_training - INFO - Data loaded and split successfully
+2026-05-23 16:25:39,062 - model_training - INFO - Training LightGBM model
+2026-05-23 16:25:39,062 - model_training - INFO - Random search parameters initiated
+2026-05-23 16:26:35,919 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 16:26:35,919 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 16:26:35,919 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 16:26:35,919 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 16:26:35,938 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 16:26:35,939 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 16:26:35,939 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 16:26:35,939 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 16:26:35,939 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 16:26:35,939 - model_training - INFO - Saving model
+2026-05-23 16:26:35,964 - model_training - INFO - Model saved successfully
+2026-05-23 16:26:35,964 - model_training - INFO - Logging the model to MLFlow
+2026-05-23 16:26:35,967 - model_training - INFO - Logging the model parameters to MLFlow
+2026-05-23 16:26:35,978 - model_training - INFO - Logging the metrics to MLFlow
+2026-05-23 16:26:35,987 - model_training - INFO - Model training completed successfully
+2026-05-23 16:37:59,802 - model_training - INFO - Starting model training pipeline
+2026-05-23 16:37:59,803 - model_training - INFO - Starting mlflow run
+2026-05-23 16:37:59,803 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 16:37:59,818 - model_training - ERROR - Error running model training: When an mlflow-artifacts URI was supplied, the tracking URI must be a valid http or https URI, but it was currently set to sqlite:/C:/Users/Rondon/Documents/1. Python Starter/24.hotel_revervation_ml/mlflow.db. Perhaps you forgot to set the tracking URI to the running MLflow server. To set the tracking URI, use either of the following methods:
+1. Set the MLFLOW_TRACKING_URI environment variable to the desired tracking URI. `export MLFLOW_TRACKING_URI=http://localhost:5000`
+2. Set the tracking URI programmatically by calling `mlflow.set_tracking_uri`. `mlflow.set_tracking_uri('http://localhost:5000')`
+2026-05-23 16:42:47,131 - model_training - INFO - Starting model training pipeline
+2026-05-23 16:42:47,131 - model_training - INFO - Starting mlflow run
+2026-05-23 16:42:47,131 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 16:42:47,142 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 16:42:47,142 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 16:42:47,156 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 16:42:47,157 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 16:42:47,160 - model_training - INFO - Data loaded and split successfully
+2026-05-23 16:42:47,160 - model_training - INFO - Training LightGBM model
+2026-05-23 16:42:47,161 - model_training - INFO - Random search parameters initiated
+2026-05-23 16:43:51,742 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 16:43:51,742 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 16:43:51,742 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 16:43:51,742 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 16:43:51,760 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 16:43:51,760 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 16:43:51,760 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 16:43:51,760 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 16:43:51,760 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 16:43:51,760 - model_training - INFO - Saving model
+2026-05-23 16:43:51,782 - model_training - INFO - Model saved successfully
+2026-05-23 16:43:51,782 - model_training - INFO - Logging the model to MLFlow
+2026-05-23 16:43:51,785 - model_training - INFO - Logging the model parameters to MLFlow
+2026-05-23 16:43:51,794 - model_training - INFO - Logging the metrics to MLFlow
+2026-05-23 16:43:51,803 - model_training - INFO - Model training completed successfully
+2026-05-23 17:07:35,166 - model_training - INFO - Starting model training pipeline
+2026-05-23 17:07:35,167 - model_training - INFO - Starting mlflow run
+2026-05-23 17:07:35,167 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 17:07:35,180 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 17:07:35,180 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 17:07:35,193 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 17:07:35,193 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 17:07:35,198 - model_training - INFO - Data loaded and split successfully
+2026-05-23 17:07:35,198 - model_training - INFO - Training LightGBM model
+2026-05-23 17:07:35,198 - model_training - INFO - Random search parameters initiated
+2026-05-23 17:08:45,420 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 17:08:45,420 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 17:08:45,420 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 17:08:45,420 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 17:08:45,439 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 17:08:45,439 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 17:08:45,439 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 17:08:45,439 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 17:08:45,439 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 17:08:45,440 - model_training - INFO - Saving model
+2026-05-23 17:08:45,464 - model_training - INFO - Model saved successfully
+2026-05-23 17:08:45,464 - model_training - INFO - Logging the model to MLFlow
+2026-05-23 17:08:45,467 - model_training - INFO - Logging the model parameters to MLFlow
+2026-05-23 17:08:45,478 - model_training - INFO - Logging the metrics to MLFlow
+2026-05-23 17:08:45,487 - model_training - INFO - Model training completed successfully
+2026-05-23 17:14:14,417 - model_training - INFO - Starting model training pipeline
+2026-05-23 17:14:14,417 - model_training - INFO - Starting mlflow run
+2026-05-23 17:14:14,417 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 17:14:14,428 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 17:14:14,428 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 17:14:14,442 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 17:14:14,442 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 17:14:14,445 - model_training - INFO - Data loaded and split successfully
+2026-05-23 17:14:14,446 - model_training - INFO - Training LightGBM model
+2026-05-23 17:14:14,446 - model_training - INFO - Random search parameters initiated
+2026-05-23 17:15:17,713 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 17:15:17,713 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 17:15:17,713 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 17:15:17,713 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 17:15:17,732 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 17:15:17,732 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 17:15:17,732 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 17:15:17,732 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 17:15:17,732 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 17:15:17,733 - model_training - INFO - Saving model
+2026-05-23 17:15:17,758 - model_training - INFO - Model saved successfully
+2026-05-23 17:15:17,758 - model_training - INFO - Logging the model to MLFlow
+2026-05-23 17:15:17,760 - model_training - INFO - Logging the model parameters to MLFlow
+2026-05-23 17:15:17,770 - model_training - INFO - Logging the metrics to MLFlow
+2026-05-23 17:15:17,780 - model_training - INFO - Model training completed successfully
+2026-05-23 17:16:57,722 - model_training - INFO - Starting model training pipeline
+2026-05-23 17:16:57,722 - model_training - INFO - Starting mlflow run
+2026-05-23 17:16:57,722 - model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-23 17:16:57,733 - model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-23 17:16:57,733 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-23 17:16:57,746 - model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-23 17:16:57,747 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-23 17:16:57,750 - model_training - INFO - Data loaded and split successfully
+2026-05-23 17:16:57,750 - model_training - INFO - Training LightGBM model
+2026-05-23 17:16:57,750 - model_training - INFO - Random search parameters initiated
+2026-05-23 17:17:57,054 - model_training - INFO - Hyperparameter tuning completed
+2026-05-23 17:17:57,054 - model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-23 17:17:57,054 - model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-23 17:17:57,054 - model_training - INFO - Evaluating LightGBM model
+2026-05-23 17:17:57,072 - model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-23 17:17:57,072 - model_training - INFO - Precision: 0.9148166023166023
+2026-05-23 17:17:57,072 - model_training - INFO - Recall: 0.9015457788347205
+2026-05-23 17:17:57,072 - model_training - INFO - F1 Score: 0.908132710504252
+2026-05-23 17:17:57,072 - model_training - INFO - LightGBM model evaluated successfully
+2026-05-23 17:17:57,072 - model_training - INFO - Saving model
+2026-05-23 17:17:57,095 - model_training - INFO - Model saved successfully
+2026-05-23 17:17:57,095 - model_training - INFO - Logging the model to MLFlow
+2026-05-23 17:17:57,098 - model_training - INFO - Logging the model parameters to MLFlow
+2026-05-23 17:17:57,108 - model_training - INFO - Logging the metrics to MLFlow
+2026-05-23 17:17:57,116 - model_training - INFO - Model training completed successfully
