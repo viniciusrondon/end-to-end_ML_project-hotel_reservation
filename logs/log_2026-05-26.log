@@ -1,0 +1,69 @@
+2026-05-26 16:17:45,354 - training_pipeline - INFO - Starting training pipeline
+2026-05-26 16:17:45,355 - training_pipeline - INFO - Data ingestion started
+2026-05-26 16:17:45,356 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-26 16:17:45,356 - src.data_ingestion - INFO - Kaggle data ingestion started with: ahsan81/hotel-reservations-classification-dataset and file is hotel_reservations.csv
+2026-05-26 16:17:45,356 - src.data_ingestion - INFO - Starting kaggle data ingestion pipeline
+2026-05-26 16:17:46,326 - src.data_ingestion - INFO - CSV copied from Kaggle dataset ahsan81/hotel-reservations-classification-dataset (Hotel Reservations.csv) to artifacts/raw\raw.csv
+2026-05-26 16:17:46,326 - src.data_ingestion - INFO - Splitting data into train and test sets with test_ratio 0.2
+2026-05-26 16:17:46,493 - src.data_ingestion - INFO - Train and test data saved successfully to artifacts/raw\train.csv and artifacts/raw\test.csv
+2026-05-26 16:17:46,495 - src.data_ingestion - INFO - Kaggle data ingestion pipeline completed successfully
+2026-05-26 16:17:46,495 - training_pipeline - INFO - Data preprocessing started
+2026-05-26 16:17:46,496 - utils.common_functions - INFO - yaml file: config/config.yaml loaded successfully
+2026-05-26 16:17:46,496 - src.data_preprocessing - INFO - Starting data preprocessing pipeline from RAW directory
+2026-05-26 16:17:46,496 - utils.common_functions - INFO - Loading data from artifacts/raw\train.csv
+2026-05-26 16:17:46,537 - utils.common_functions - INFO - Loading data from artifacts/raw\test.csv
+2026-05-26 16:17:46,553 - src.data_preprocessing - INFO - Train and Test data loaded successfully
+2026-05-26 16:17:46,553 - src.data_preprocessing - INFO - Preprocessing train and test data
+2026-05-26 16:17:46,553 - src.data_preprocessing - INFO - Preprocessing data step
+2026-05-26 16:17:46,553 - src.data_preprocessing - INFO - Dropping Booking_ID column
+2026-05-26 16:17:46,558 - src.data_preprocessing - INFO - Dropping duplicate rows
+2026-05-26 16:17:46,573 - src.data_preprocessing - INFO - Getting categorical and numerical columns from config, applying label encoding
+2026-05-26 16:17:46,581 - src.data_preprocessing - INFO - Skewness handling
+2026-05-26 16:17:46,583 - src.data_preprocessing - INFO - Skewness handled successfully
+2026-05-26 16:17:46,583 - src.data_preprocessing - INFO - Preprocessing data step
+2026-05-26 16:17:46,583 - src.data_preprocessing - INFO - Dropping Booking_ID column
+2026-05-26 16:17:46,584 - src.data_preprocessing - INFO - Dropping duplicate rows
+2026-05-26 16:17:46,586 - src.data_preprocessing - INFO - Getting categorical and numerical columns from config, applying label encoding
+2026-05-26 16:17:46,590 - src.data_preprocessing - INFO - Skewness handling
+2026-05-26 16:17:46,590 - src.data_preprocessing - INFO - Skewness handled successfully
+2026-05-26 16:17:46,590 - src.data_preprocessing - INFO - Preprocessing train and test data completed successfully
+2026-05-26 16:17:46,590 - src.data_preprocessing - INFO - Balancing train data
+2026-05-26 16:17:46,590 - src.data_preprocessing - INFO - Balancing data step
+2026-05-26 16:17:48,063 - src.data_preprocessing - INFO - Data balanced successfully
+2026-05-26 16:17:48,064 - src.data_preprocessing - INFO - Balancing train data completed successfully
+2026-05-26 16:17:48,064 - src.data_preprocessing - INFO - Selecting features for train data
+2026-05-26 16:17:48,064 - src.data_preprocessing - INFO - Selecting features step
+2026-05-26 16:17:50,026 - src.data_preprocessing - INFO - Selecting features for train and test data completed successfully
+2026-05-26 16:17:50,026 - src.data_preprocessing - INFO - Saving train data to processed folder
+2026-05-26 16:17:50,026 - src.data_preprocessing - INFO - Saving data processed in processed folder
+2026-05-26 16:17:50,071 - src.data_preprocessing - INFO - Data saved successfully to artifacts/processed\Processed_train.csv
+2026-05-26 16:17:50,071 - src.data_preprocessing - INFO - Saving data processed in processed folder
+2026-05-26 16:17:50,079 - src.data_preprocessing - INFO - Data saved successfully to artifacts/processed\Processed_test.csv
+2026-05-26 16:17:50,079 - src.data_preprocessing - INFO - Saving train and test data to processed folder completed successfully
+2026-05-26 16:17:50,080 - training_pipeline - INFO - Model training started
+2026-05-26 16:17:51,371 - src.model_training - INFO - Starting model training pipeline
+2026-05-26 16:17:51,371 - src.model_training - INFO - Starting mlflow run
+2026-05-26 16:17:51,371 - src.model_training - INFO - Logging the training and testing dataset to MLFlow
+2026-05-26 16:17:51,382 - src.model_training - INFO - Loading and splitting data from artifacts/processed\Processed_train.csv
+2026-05-26 16:17:51,382 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_train.csv
+2026-05-26 16:17:51,403 - src.model_training - INFO - Loading test data from artifacts/processed\Processed_test.csv
+2026-05-26 16:17:51,403 - utils.common_functions - INFO - Loading data from artifacts/processed\Processed_test.csv
+2026-05-26 16:17:51,416 - src.model_training - INFO - Data loaded and split successfully
+2026-05-26 16:17:51,416 - src.model_training - INFO - Training LightGBM model
+2026-05-26 16:17:51,416 - src.model_training - INFO - Random search parameters initiated
+2026-05-26 16:18:57,096 - src.model_training - INFO - Hyperparameter tuning completed
+2026-05-26 16:18:57,096 - src.model_training - INFO - Best LightGBM model parameters: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1890550473839461), 'max_depth': 21, 'n_estimators': 314, 'num_leaves': 94}
+2026-05-26 16:18:57,096 - src.model_training - INFO - LightGBM model trained and tuned successfully
+2026-05-26 16:18:57,096 - src.model_training - INFO - Evaluating LightGBM model
+2026-05-26 16:18:57,115 - src.model_training - INFO - Accuracy: 0.8731602447494625
+2026-05-26 16:18:57,115 - src.model_training - INFO - Precision: 0.9148166023166023
+2026-05-26 16:18:57,115 - src.model_training - INFO - Recall: 0.9015457788347205
+2026-05-26 16:18:57,115 - src.model_training - INFO - F1 Score: 0.908132710504252
+2026-05-26 16:18:57,115 - src.model_training - INFO - LightGBM model evaluated successfully
+2026-05-26 16:18:57,115 - src.model_training - INFO - Saving model
+2026-05-26 16:18:57,139 - src.model_training - INFO - Model saved successfully
+2026-05-26 16:18:57,139 - src.model_training - INFO - Logging the model to MLFlow
+2026-05-26 16:18:57,142 - src.model_training - INFO - Logging the model parameters to MLFlow
+2026-05-26 16:18:57,152 - src.model_training - INFO - Logging the metrics to MLFlow
+2026-05-26 16:18:57,161 - src.model_training - INFO - Model training completed successfully
+2026-05-26 16:18:57,171 - training_pipeline - INFO - Training pipeline completed successfully
